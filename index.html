@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Tube | Media Streaming Platform</title>
+    <link rel="stylesheet" href="./css/home.css ">
+</head>
+<body>
+    <div id="Top">
+        <div id="imgFixer"><img id="TopLogo" src="./images/logo.png" alt="Logo"></div>
+        <div id="tpOv"></div>
+        <img id="BIM1" class="bgm0" src="./images/tile.jpg" alt="Logo">
+        <img id="BIM2" class="bgm0" src="./images/tile.jpg">
+    </div>
+
+    <div id="top3picks">
+        <h1>Top 5 Picks For You</h1>
+        <div id="pick">
+            <div class="card"><div class="overImg"> <div class="movietitle"><h2>Chainsaw Man: Reze Arc</h2><p>Action/Romance</p></div>  <button class="button" onclick="window.location.href='./pages/1.html'">Watch Now</button> </div> <img src="./images/card1.jpg"></div>
+            <div class="card"><div class="overImg"> <div class="movietitle"><h2>FNAF 2</h2><p>Horror</p></div>                          <button class="button" onclick="window.location.href='./pages/2.html'">Watch Now</button> </div> <img src="./images/card2.jpg"></div>
+            <div class="card"><div class="overImg"> <div class="movietitle"><h2>A Minecraft Movie</h2><p>Adventure/Fantasy</p></div>    <button class="button" onclick="window.location.href='./pages/3.html'">Watch Now</button> </div> <img src="./images/card3.jpg"></div>
+            <div class="card"><div class="overImg"> <div class="movietitle"><h2>Superman 2025</h2><p>Action/Adventure</p></div>         <button class="button" onclick="window.location.href='./pages/4.html'">Watch Now</button> </div> <img src="./images/card4.jpg"></div>
+            <div class="card"><div class="overImg"> <div class="movietitle"><h2>Weapons</h2><p>Horror</p></div>                         <button class="button" onclick="window.location.href='./pages/5.html'">Watch Now</button> </div> <img src="./images/card5.jpg"></div>
+        </div>
+    </div>
+    <div id="browseAll">
+        <h1>Browse More</h1>
+        <div id="genreSection">
+            <button id="All">All</button>
+            <button id="Action">Action</button>
+            <button id="Adventure">Adventure</button>
+            <button id="Horror">Crime/Mystery</button>
+            <button id="Comedy">Comedy</button>
+            <button id="Fantasy">Fantasy</button>
+            <button id="Horror">Horror</button>
+            <button id="Sci-Fi">Sci-Fi</button>
+        </div>
+        <div id="allCards">
+            <div class="card2"><div class="overImg"> <div class="movietitle"><h2>Chainsaw Man: Reze Arc</h2><p>Action/Romance</p></div><button class="button" onclick="window.location.href='./pages/1.html'">Watch Now</button> </div><img src="./images/card1.jpg"></div>
+            <div class="card2"><div class="overImg"> <div class="movietitle"><h2>FNAF 2</h2><p>Horror</p></div>                        <button class="button" onclick="window.location.href='./pages/2.html'">Watch Now</button> </div><img src="./images/card2.jpg"></div>
+            <div class="card2"><div class="overImg"> <div class="movietitle"><h2>A Minecraft Movie</h2><p>Adventure/Fantasy</p></div>  <button class="button" onclick="window.location.href='./pages/3.html'">Watch Now</button> </div><img src="./images/card3.jpg"></div>
+            <div class="card2"><div class="overImg"> <div class="movietitle"><h2>Superman 2025</h2><p>Action/Adventure</p></div>       <button class="button" onclick="window.location.href='./pages/4.html'">Watch Now</button> </div><img src="./images/card4.jpg"></div>
+            <div class="card2"><div class="overImg"> <div class="movietitle"><h2>Weapons</h2><p>Horror</p></div>                       <button class="button" onclick="window.location.href='./pages/5.html'">Watch Now</button> </div><img src="./images/card5.jpg"></div>
+            <div class="card2"><div class="overImg"> <div class="movietitle"><h2>Five Nights At Freddys</h2><p>Horror</p></div>                 <button class="button" onclick="window.location.href='./pages/6.html'">Watch Now</button> </div><img src="./images/card6.jpg"></div>           
+        </div>
+    </div>
+
+
+
+
+    <!-- Top Section -->
+    <script>
+    const img1 = document.getElementById("BIM1");
+    const img2 = document.getElementById("BIM2");
+
+    let x = 0;
+    const speed = 0.345; // change speed here
+
+    function animate() {
+        const w = img1.offsetWidth;
+
+        x -= speed;
+        if (x <= -w) x += w;
+
+        img1.style.transform = `translateX(${x}px)`;
+        img2.style.transform = `translateX(${x + w}px)`;
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+    </script>
+    
+</body>
+</html>
+<!--Citations-->
+<!-- 
+Image for background animation: https://wallpapers.com/wallpapers/american-movie-posters-z0puq43u0qbtr6j2.html 
+Image for card 3: http://www.impawards.com/2025/minecraft_the_movie.html
+Image for card 2: http://www.impawards.com/2025/five_nights_at_freddys_two_ver2.html
+Image for card 1: http://www.impawards.com/intl/japan/2025/gekijoban_chenso_man_rezehen.html
+Image for card 4: http://www.impawards.com/2025/superman_ver2.html
+-->

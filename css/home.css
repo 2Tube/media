@@ -1,0 +1,183 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+body { font-family: Arial, sans-serif; background-color: #000000; overflow-x: hidden; color: white;}
+
+
+/* Top Section Styles */
+#Top {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+}
+#Top img { position: absolute;}
+.bgm0 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(37.67%);
+}
+#tpOv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.0) 100%
+    );
+}
+#TopLogo {
+    height: 30vh;
+    position: relative;
+    z-index: 2;
+    filter: brightness(80%);
+}
+#imgFixer {
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Top 3 Picks Section */
+h1 {
+    font: 1.8em sans-serif;
+    font-weight: 600;
+    background: linear-gradient(
+        to right,
+        rgba(199, 0, 0, 0.336) 0%,
+        rgba(199, 0, 0, 0.795) 50%,
+        rgba(199, 0, 0, 0.336) 100%
+    );
+    padding: 15px;
+    text-align: center;
+}
+#top3picks {
+    margin-top: 10vh;
+    width: 100vw;
+    height: auto;
+}
+#pick {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card img { width: 80%; border-radius: 10px; }
+.overImg {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+.card:hover .overImg  { opacity: 1; }
+.movietitle {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.movietitle h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.button {
+    flex-grow: 10;
+    padding: 0px 25px;
+    max-height: 40px;
+    min-width: 80%;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000af;
+    color: rgb(199, 0, 0);
+    border: 1px solid rgb(199, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: rgb(199, 0, 0);
+    color: #ffffff;
+    scale: 0.9867;
+}
+
+
+/* Browse All Section */
+#browseAll {
+    margin-top: 10vh;
+    width: 100vw;
+    height: auto;
+}
+#genreSection {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#genreSection button {
+    flex-grow: 10;
+    padding: 15px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: rgb(199, 0, 0);
+    border: 1px solid rgb(199, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#genreSection button:hover {
+    background-color: rgb(199, 0, 0);
+    color: #ffffff;
+    scale: 0.9867;
+}
+#allCards {
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card2 {
+    max-width: 14.285714%;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card2 img { width: 90%; border-radius: 10px; }
+.card2:hover .overImg  { opacity: 1; }
